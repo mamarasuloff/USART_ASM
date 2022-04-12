@@ -43,7 +43,7 @@ USART_UDRE:
 	lpm
 	inc		r17
 	cpi		r17, 5
-	brne	LABEL_01
+	brne		LABEL_01
 	clr		r17
 	ldi		r16, (0 << TXEN) | (0 << UDRE)
 	out		UCSRB, r16
